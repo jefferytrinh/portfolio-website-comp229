@@ -1,0 +1,42 @@
+body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: gray;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.card {
+  background: black;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
