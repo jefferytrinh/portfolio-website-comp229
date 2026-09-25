@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 1</title>
+        <link rel="stylesheet" href="assignment1.css">
+    </head>
+    <body onclick="showInputs(); document.querySelector('p').style.display = 'none';">
+        <h1>MULTIPLICATION TABLE</h1>
+        <p>Click to draw table</p>
+        <div id="input-area" style="display: none;">
+            <label>Rows: <input id="rows" type="number" value="10"></label>
+            <label>Columns: <input id="cols" type="number" value="10"></label>
+        <button onclick="drawTable()" style="padding: 1px">Draw Table</button>
+        </div>
+        <div id="tableContainer" style="padding: 80px"></div>
+        <script src="assignment1.js"></script>
+    </body>
+    <p style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">&copy; 2026 Jeffery Trinh | 301522695 | COMP 125</p>
+</html>
