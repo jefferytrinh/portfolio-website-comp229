@@ -19,7 +19,7 @@ function Services() {
 
       <div class="card">
         <h3>Programming</h3>
-        <p><a href="assignment1 (COMP 125)/assignment1.html" target="_blank"><img src="screenshots/multiplicationwin2026screenshot.png" class="basic-border"/></a></p>
+        <p><a href="assignment1comp125/assignment1.html" target="_blank"><img src="screenshots/multiplicationwin2026screenshot.png" class="basic-border"/></a></p>
         <p>I also provide programming services in cooperation with web development, like this multiplication table that
           incorporates JavaScript.</p>
       </div>
