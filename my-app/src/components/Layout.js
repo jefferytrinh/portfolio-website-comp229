@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Layout({ children }) {
+function Layout({ children }) { // children is prop that is the content of page. This is so layout can be reused for all pages, without having to repeat the footer and header every time.
   return (
     <>
       <header>

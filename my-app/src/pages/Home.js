@@ -24,3 +24,4 @@ function Home() {
 export default Home;
 
 // also for some reason when doing stuff like <img src="example.png">, you have to add "/" near the end like <img src="example.png"/> otherwise it will not work.
+// to start in terminal: cd my-app, then npm start
