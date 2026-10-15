@@ -3,7 +3,11 @@ function Services() {
     <>
       <h2>SERVICES</h2>
 
-      <p>Click on the images below to view my projects:</p>
+      <div class="card">
+        <h3>My Services</h3>
+        <p>I offer many services in regards to website development and design.</p>
+        <p>Click on the images below to view my projects:</p>
+      </div>
       
       <div class="card">
         <h3>Web Development</h3>
