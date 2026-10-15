@@ -2,10 +2,8 @@ function Services() {
   return (
     <>
       <h2>SERVICES</h2>
-      
-      <div class="card">
-        <p>Click on the images below to view my projects:</p>
-      </div>
+
+      <p>Click on the images below to view my projects:</p>
       
       <div class="card">
         <h3>Web Development</h3>
