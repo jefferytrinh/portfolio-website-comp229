@@ -4,6 +4,10 @@ function Services() {
       <h2>SERVICES</h2>
       
       <div class="card">
+        <p>Click on the images below to view my projects:</p>
+      </div>
+      
+      <div class="card">
         <h3>Web Development</h3>
         <p><a href="http://studentweb.cencol.ca/jtrinh8/assignment2/assignment2.html" target="_blank"><img src="screenshots/protareasfall2025screenshot.png" class="basic-border"/></a></p>
         <p>I offer custom web development services to help bring your ideas to life, like this website on protected areas
