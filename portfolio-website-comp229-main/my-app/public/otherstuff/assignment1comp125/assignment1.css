@@ -1,0 +1,19 @@
+body
+{
+    font-family: Helvetica;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+table
+{
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+td
+{
+    border: 2px solid darkslategray;
+    padding: 5px 10px;
+}
