@@ -1,34 +1,44 @@
+import { useEffect, useState } from "react";
+
 function Services() {
+
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/services")
+      .then(res => res.json())
+      .then(data => setServices(data.data));
+  }, []);
+
   return (
     <>
       <h2>SERVICES</h2>
 
-      <div class="card">
+      <div className="card">
         <h3>My Services</h3>
         <p>I offer many services in regards to website development and design.</p>
         <p>Click on the images below to view my projects:</p>
       </div>
-      
-      <div class="card">
-        <h3>Web Development</h3>
-        <p><a href="http://studentweb.cencol.ca/jtrinh8/assignment2/assignment2.html" target="_blank"><img src="screenshots/protareasfall2025screenshot.png" class="basic-border"/></a></p>
-        <p>I offer custom web development services to help bring your ideas to life, like this website on protected areas
-          issues.</p>
-      </div>
 
-      <div class="card">
-        <h3>Web Design</h3>
-        <p><a href="http://studentweb.cencol.ca/jtrinh8/assignment3/assignment3.html" target="_blank"><img src="screenshots/macbookfall2025screenshot.png" class="basic-border"/></a></p>
-        <p>My design services focus on creating visually appealing and user-friendly websites, like this Apple-inspired
-          design.</p>
-      </div>
+      {services.map(service => (
+        <div className="card" key={service.id}>
 
-      <div class="card">
-        <h3>Programming</h3>
-        <p><a href="otherstuff/assignment1comp125/assignment1.html" target="_blank"><img src="screenshots/multiplicationwin2026screenshot.png" class="basic-border"/></a></p>
-        <p>I also provide programming services in cooperation with web development, like this multiplication table that
-          incorporates JavaScript.</p>
-      </div>
+          <h3>{service.title}</h3>
+
+          <p>
+            <a href={service.link} target="_blank" rel="noreferrer">
+              <img
+                src={service.image}
+                className="basic-border"
+                alt={service.title}
+              />
+            </a>
+          </p>
+
+          <p>{service.description}</p>
+
+        </div>
+      ))}
     </>
   );
 }
