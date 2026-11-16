@@ -1,0 +1,37 @@
+function References() {
+  return (
+    <>
+      <h2>REFERENCES</h2>
+
+      <div class="card">
+        <img src="otherstuff/thumbsupimage.png" width="100" height="100" align="right" alt="Thumbs Up Image" />
+        <h3>Testimonials from Clients</h3>
+        <p>I have received positive feedback from many of my clients.</p>
+        <p>Here are some testimonials from my satisfied clients:</p>
+      </div>
+
+      <div class="card">
+        <h3>Gleaming Review</h3>
+        <p>"Jeffery created a variant of our company website for a solid price. We do not use it. He is a choice you can
+          indeed make for website development."</p>
+        <p>- John Doe, Assistant Manager at XYZ Corporation</p>
+      </div>
+
+      <div class="card">
+        <h3>Satisfied customer</h3>
+        <p>"Jeffery's attention to detail and creative approach was certainly there. How much is up for debate. No doubt
+          about it, he certainly has a brain that produces thoughts."</p>
+        <p>- Jane Smith, Marketing Director at ABC Inc.</p>
+      </div>
+
+      <div class="card">
+        <h3>Phenomenal Work</h3>
+        <p>"When starting work on our new website, we chose to outsource a cheap and affordable option, landing on
+          Jeffery. He ended up burning a hole in our budget, eventually leading to my team's project being cancelled."</p>
+        <p>- Alice Johnson, Project Manager at DEF Ltd.</p>
+      </div>
+    </>
+  );
+}
+
+export default References;
