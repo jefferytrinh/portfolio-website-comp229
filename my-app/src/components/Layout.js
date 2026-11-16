@@ -13,7 +13,6 @@ function Layout({ children }) { // children is prop that is the content of page.
           <Link to="/services">Services</Link>
           <Link to="/references">References</Link>
           <Link to="/contact">Contact Me</Link>
-          <Link to="/admin">Admin</Link>
         </nav>
       </header>
 

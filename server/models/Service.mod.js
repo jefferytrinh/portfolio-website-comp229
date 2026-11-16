@@ -1,10 +1,8 @@
 import mongoose from "mongoose";
 
-const serviceSchema = new mongoose.Schema({
+const schema = new mongoose.Schema({
   title: String,
-  description: String,
-  image: String,
-  link: String
+  description: String
 });
 
-export default mongoose.model("Service", serviceSchema);
+export default mongoose.model("Service", schema);
