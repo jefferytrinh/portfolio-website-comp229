@@ -31,7 +31,9 @@ export const getProjects = async (req, res, next) => {
     const data = projects.map(item => ({
       id: item._id,
       title: item.title,
-      description: item.description
+      description: item.description,
+      image: item.image,
+      link: item.link
     }));
 
     res.json({

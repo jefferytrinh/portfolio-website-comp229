@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
 
-const schema = new mongoose.Schema({
+const projectSchema = new mongoose.Schema({
   title: String,
-  completion: Date,
   description: String,
-  image: String
+  image: String,
+  link: String,
+  completion: Date
 });
 
-export default mongoose.model("Project", schema);
+export default mongoose.model("Project", projectSchema);

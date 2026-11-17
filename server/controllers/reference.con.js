@@ -30,8 +30,10 @@ export const getReferences = async (req, res, next) => {
 
     const data = references.map(item => ({
       id: item._id,
-      title: item.title,
-      description: item.description
+      name: item.name,
+      testimonial: item.testimonial,
+      position: item.position,
+      company: item.company,
     }));
 
     res.json({
