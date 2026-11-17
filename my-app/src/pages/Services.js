@@ -5,7 +5,7 @@ function Services() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/services")
+    fetch(`${process.env.REACT_APP_API_URL}/api/services`)
       .then(res => res.json())
       .then(data => setServices(data.data));
   }, []);

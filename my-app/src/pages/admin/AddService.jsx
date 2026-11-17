@@ -19,7 +19,7 @@ function AddService() {
     e.preventDefault();
 
     await fetch(
-      "http://localhost:3000/api/services",
+      `${process.env.REACT_APP_API_URL}/api/services`,
       {
         method: "POST",
         headers: {

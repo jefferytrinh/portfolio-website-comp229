@@ -12,7 +12,7 @@ function AddUser() {
     e.preventDefault();
 
     await fetch(
-      "http://localhost:3000/api/users",
+      `${process.env.REACT_APP_API_URL}/api/users`,
       {
         method: "POST",
         headers: {

@@ -13,7 +13,7 @@ function EditReference() {
   useEffect(() => {
 
     fetch(
-      `http://localhost:3000/api/references/${id}`
+      `${process.env.REACT_APP_API_URL}/api/references/${id}`
     )
       .then(res => res.json())
       .then(data => {
@@ -32,7 +32,7 @@ function EditReference() {
     e.preventDefault();
 
     await fetch(
-      `http://localhost:3000/api/references/${id}`,
+      `${process.env.REACT_APP_API_URL}/api/references/${id}`,
       {
         method: "PUT",
         headers: {

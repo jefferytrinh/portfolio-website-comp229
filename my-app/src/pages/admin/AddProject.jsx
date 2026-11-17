@@ -12,7 +12,7 @@ function AddProject() {
     e.preventDefault();
 
     await fetch(
-      "http://localhost:3000/api/projects",
+      `${process.env.REACT_APP_API_URL}/api/projects`,
       {
         method: "POST",
         headers: {

@@ -13,7 +13,7 @@ function EditService() {
   useEffect(() => {
 
     fetch(
-      `http://localhost:3000/api/services/${id}`
+      `${process.env.REACT_APP_API_URL}/api/services/${id}`
     )
       .then(res => res.json())
       .then(data => {
@@ -32,7 +32,7 @@ function EditService() {
     e.preventDefault();
 
     await fetch(
-      `http://localhost:3000/api/services/${id}`,
+      `${process.env.REACT_APP_API_URL}/api/services/${id}`,
       {
         method: "PUT",
         headers: {

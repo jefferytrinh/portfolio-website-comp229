@@ -13,7 +13,7 @@ function EditProject() {
   useEffect(() => {
 
     fetch(
-      `http://localhost:3000/api/projects/${id}`
+      `${process.env.REACT_APP_API_URL}/api/projects/${id}`
     )
       .then(res => res.json())
       .then(data => {
@@ -32,7 +32,7 @@ function EditProject() {
     e.preventDefault();
 
     await fetch(
-      `http://localhost:3000/api/projects/${id}`,
+      `${process.env.REACT_APP_API_URL}/api/projects/${id}`,
       {
         method: "PUT",
         headers: {

@@ -5,7 +5,7 @@ function References() {
   const [references, setReferences] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/references")
+    fetch(`${process.env.REACT_APP_API_URL}/api/references`)
       .then(res => res.json())
       .then(data => setReferences(data.data));
   }, []);

@@ -12,7 +12,7 @@ function AddReference() {
     e.preventDefault();
 
     await fetch(
-      "http://localhost:3000/api/references",
+      `${process.env.REACT_APP_API_URL}/api/references`,
       {
         method: "POST",
         headers: {
